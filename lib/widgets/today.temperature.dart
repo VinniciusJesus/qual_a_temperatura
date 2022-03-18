@@ -40,7 +40,7 @@ class TodayTemperature extends StatelessWidget {
                   ),
                 ),
                 Icon(
-                  FontAwesomeIcons.circle,
+                  FontAwesomeIcons.sun,
                   size: 50,
                   color: Color(0xFFFF9A88),
                 )

@@ -15,7 +15,35 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 50),
               Row(
                 children: [
+                  CityInput(),
+                  SizedBox(width: 15),
+                  StateInput(),
+                ],
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
                   Expanded(child: TodayTemperature()),
+                  SizedBox(width: 15),
+                  PrevisionTemperature(),
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                children: [
+                  PrevisionTemperature(),
+                  SizedBox(width: 15),
+                  PrevisionTemperature()
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                children: [
+                  PrevisionTemperature(),
                   SizedBox(width: 15),
                   PrevisionTemperature()
                 ],
