@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qual_a_temepratura/widgets/index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,49 +9,19 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFF7F7F7),
       body: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
-        children: [
-          Row(
             children: [
-              TextFormField(
-                // controller: controller,
-                keyboardType: TextInputType.text,
-                style: TextStyle(
-                  fontSize: 22,
-                ),
-                decoration: InputDecoration(
-                  fillColor: Color(0xFFF7F7F7),
-                  filled: true,
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
-                    borderSide: BorderSide(
-                      color: Color(0xFFF7F7F7),
-                    ),
-                  ),
-                  disabledBorder: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
-                    borderSide: BorderSide(
-                      color: Color(0xFFF7F7F7),
-                    ),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(Radius.circular(8)),
-                    borderSide: BorderSide(
-                      width: 1,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  icon: Icon(Icons.search),
-                  labelText: "Cidade",
-                  labelStyle: TextStyle(
-                    color: Colors.grey,
-                  ),
-                ),
-              ),
+              SizedBox(height: 50),
+              Row(
+                children: [
+                  Expanded(child: TodayTemperature()),
+                  SizedBox(width: 15),
+                  PrevisionTemperature()
+                ],
+              )
             ],
-          )
-        ],
-      )),
+          )),
     );
   }
 }
