@@ -18,9 +18,13 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 50),
               Row(
                 children: [
-                  CityInput(),
+                  CityInput(
+                    controller: _controller,
+                  ),
                   SizedBox(width: 15),
-                  StateInput(),
+                  StateInput(
+                    controller: _controller,
+                  ),
                 ],
               ),
               SizedBox(height: 20),
