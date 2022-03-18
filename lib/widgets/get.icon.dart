@@ -6,109 +6,109 @@ Widget getIcon(String conditionCode) {
     case "0":
       return Icon(
         FontAwesomeIcons.cloudShowersHeavy,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "4":
       return Icon(
         FontAwesomeIcons.cloudShowersHeavy,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "5":
       return Icon(
         FontAwesomeIcons.cloudShowersHeavy,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "6":
       return Icon(
         FontAwesomeIcons.solidSnowflake,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     case "7":
       return Icon(
         FontAwesomeIcons.solidSnowflake,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     case "8":
       return Icon(
         FontAwesomeIcons.solidSnowflake,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "11":
       return Icon(
         FontAwesomeIcons.cloudRain,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "12":
       return Icon(
         FontAwesomeIcons.cloudRain,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "26":
       return Icon(
         FontAwesomeIcons.cloudSun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     case "27":
       return Icon(
         FontAwesomeIcons.sun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     case "28":
       return Icon(
         FontAwesomeIcons.cloudSun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "29":
       return Icon(
         FontAwesomeIcons.soundcloud,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "30":
       return Icon(
         FontAwesomeIcons.soundcloud,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "31":
       return Icon(
         FontAwesomeIcons.sun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     case "32":
       return Icon(
         FontAwesomeIcons.sun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
     case "45":
       return Icon(
         FontAwesomeIcons.cloudShowersHeavy,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
 
     default:
       return Icon(
         FontAwesomeIcons.sun,
-        size: 50,
+        size: 25,
         color: Color(0xFFFF9A88),
       );
   }

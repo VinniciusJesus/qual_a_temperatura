@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:qual_a_temepratura/home.controller.dart';
 import 'package:qual_a_temepratura/widgets/index.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
+
+  final _controller = HomeController();
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +28,9 @@ class HomePage extends StatelessWidget {
                 children: [
                   Expanded(child: TodayTemperature()),
                   SizedBox(width: 15),
-                  PrevisionTemperature(),
+                  PrevisionTemperature(
+                    iconCode: "20",
+                  ),
                 ],
               ),
               SizedBox(
@@ -33,9 +38,13 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 children: [
-                  PrevisionTemperature(),
+                  PrevisionTemperature(
+                    iconCode: "8",
+                  ),
                   SizedBox(width: 15),
-                  PrevisionTemperature()
+                  PrevisionTemperature(
+                    iconCode: "20",
+                  )
                 ],
               ),
               SizedBox(
@@ -43,9 +52,13 @@ class HomePage extends StatelessWidget {
               ),
               Row(
                 children: [
-                  PrevisionTemperature(),
+                  PrevisionTemperature(
+                    iconCode: "30",
+                  ),
                   SizedBox(width: 15),
-                  PrevisionTemperature()
+                  PrevisionTemperature(
+                    iconCode: "17",
+                  )
                 ],
               )
             ],

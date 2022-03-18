@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:qual_a_temepratura/widgets/index.dart';
 
 class PrevisionTemperature extends StatelessWidget {
   const PrevisionTemperature({
     Key? key,
+    required this.iconCode,
   }) : super(key: key);
+
+  final String iconCode;
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +36,7 @@ class PrevisionTemperature extends StatelessWidget {
                       color: Color(0xFFFF9A88),
                     ),
                   ),
-                  Icon(
-                    FontAwesomeIcons.circle,
-                    size: 25,
-                    color: Color(0xFFFF9A88),
-                  )
+                  getIcon(iconCode)
                 ],
               ),
               SizedBox(height: 5),
